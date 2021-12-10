@@ -1,0 +1,91 @@
+body{
+    background-image:url(./images/topography.svg), 
+    linear-gradient(
+    110deg, #f93d66, #6d47d9);
+    background-repeat:no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 30px 60px 30px 60px;
+    
+}
+.yellowpg {
+background-color: #ffc600;
+width:100%;    
+height: 40px;
+font-size:20px;
+font-weight: 1000;
+text-align:center;
+margin-left: 4px;
+margin-right: 4px;
+}
+.background_img{           
+background-image: url("https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg");
+background-color:white;                 
+position:relative;
+background-repeat:repeat;
+height:430px;
+width:60%;    
+margin-top: 5%;
+} 
+ 
+.overlap_1{
+background-color: #ffc600;
+width:260px;
+font-size:30px;
+font-weight: bold;
+margin:15px;
+margin-top:150px;
+margin-left:48px;
+
+}  
+.overlap_2{
+    background-color: #ffc600;
+    width:200px;
+    font-size:20px;
+    font-weight: bold;
+    margin:15px;
+    margin-top:50px;
+    margin-left:48px;
+    
+} 
+
+.sidepg{
+background-color: #ffc600;
+width:270%;
+height: 205px;
+font-size:50px;
+text-align:center;   
+}   
+.minipg{
+    background-color: white;
+    font-size:16px;
+    font-weight: bold;
+    text-align:center;
+    float:left;
+    padding: 10px;
+}
+.fullpg{
+background-color: aliceblue;
+position:center;
+background-repeat:repeat;
+font-size:20px;
+font-weight: bold;
+text-align:center;
+height:450px;
+width:100%;    
+margin-top: 5%;
+border:1px solid aliceblue;
+}
+.imgview{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.part{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.maze{
+    margin-right: 10px;
+}
+.space {
+    margin-right: 20px;
+}
