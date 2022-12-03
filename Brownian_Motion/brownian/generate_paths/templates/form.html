@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background:
+        url(https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+             color:white;
+             opacity:1.1;
+            }
+             
+        div {
+        border: 1px transparent #1b1b32;
+        background-color: rgba(38, 38, 79, 0.8);
+        margin-top:4% ;
+        margin-left: 14%;                     
+        margin-bottom: 4%;        
+        margin-right: 14%;
+        padding:12% ;                           
+        border-radius:10px;       
+        font-size:22px;
+         }  
+         h1{
+             text-align:center;
+         }
+         
+         h3{
+             text-align:center;
+         }
+         
+         
+         h5{
+            text-align:center;
+         }
+         input[type="text"],input[type="number"],.dropdown{
+             width:100%;
+             height:20px ;
+             border-radius: 5px;
+             border:none;
+            padding-left: 10px;
+            margin-top: 2%;           
+         }
+         input.largerCheckbox {
+            width: 20%;
+            height: 20px;
+        }
+        input.largerRadio {
+            width: 18%;
+            height: 18px;
+        }
+        
+         </style>
+    </head>
+    <title>MA323</title>                     
+    <body>
+       <h1 style="color:blanchedalmond"> MA323 : Monte Carlo Simulation </h1>
+       <h3 style="color:blanchedalmond"> Plot the Simple Brownian Motion and the Geometric Brownian Motion </h3>
+       
+       <h4 style="text-align:left;padding-left:30px"> Name : <a href="https://github.com/naya18g" style="color:white"> Nayanika Ghosh </a> <br/>
+            Roll : 200123036
+       </h4>
+    
+
+       <div>
+       <form action = "/output/" method="POST">
+        {% csrf_token %}
+        <fieldset>
+         <legend> SIMPLE BROWNIAN MOTION </legend>
+         
+         <label for= end_time1> Ending time </label> <br/>
+         <input type="number" value="5" id="end_time1" name="end_time1" 
+         placeholder= "end_time1"
+         style="height:32px; font-size:17px; width:100%;" required>
+         <br>
+         <br/>
+
+         <label for= num_path1> Number of sample paths to be generated </label> <br/>
+         <input type="number" value="10" id="num_path1" name="num_path1" 
+         placeholder= "num_path1"
+         style="height:32px; font-size:17px; width:100%;" required>
+         <br>
+         <br/>
+        
+        </fieldset>
+        
+        <br>
+        <br/>
+        
+
+        <fieldset>
+            <legend> GEOMETRIC BROWNIAN MOTION </legend>
+            
+            <label for= end_time2> Ending time </label> <br/>
+            <input type="number" value="5" id="end_time2" name="end_time2" 
+            placeholder= "end_time2"
+            style="height:32px; font-size:17px; width:100%;" required>
+            <br>
+            <br/>
+   
+            <label for= num_path2> Number of sample paths to be generated </label> <br/>
+            <input type="number" value="10" id="num_path2" name="num_path2" 
+            placeholder= "num_path2"
+            style="height:32px; font-size:17px; width:100%;" required>
+            <br>
+            <br/>
+
+            <label for= init_val> Initial Value of the Brownian Motion [S(0)] </label> <br/>
+            <input type="number" value="0.8" step="0.00001" id="init_val" name="init_val" 
+            placeholder= "init_val"
+            style="height:32px; font-size:17px; width:100%;" required>
+            <br>
+            <br/>
+
+            <label for= Mu> Drift Parameter </label> <br/>
+            <input type="number" value="0.05" step="0.00001" id="Mu" name="Mu" 
+            placeholder= "Mu"
+            style="height:32px; font-size:17px; width:100%;" required>
+            <br>
+            <br/>
+
+            <label for= sigma> Volatility Parameter </label> <br/>
+            <input type="number" value="0.25" step="0.00001" id="sigma" name="sigma" 
+            placeholder= "sigma"
+            style="height:32px; font-size:17px; width:100%;" required>
+            <br>
+            <br/>
+           
+           </fieldset>
+           <br>
+           <br/>
+       <button name="button" type="submit" 
+       style="background-color:#0578a6; width:100%;
+       border:none; height:38px; color:white; font-size:17px;">SUBMIT</button>
+        
+       </form>
+      </div> 
+         
+    </body>
+</html>
